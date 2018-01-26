@@ -1,9 +1,17 @@
-const lang = 'French';
-const locale = 'fr';
+const langs = {
+    'fr': 'French',
+    'en': 'English',
+    'de': 'German',
+    'nl': 'Dutch',
+    'es': 'Spanish',
+    'ja': 'Japanese',
+    'th': 'Thaï',
+    'zh-CN': 'Chinese',
+}
 
 const baseUrl = 'https://translate.google.fr/#';
 const sourceLang = 'auto';
-let destLang;
+let destLang = 'fr';
 
 const getUri = (toTranslate, languageDestination = 'fr') => encodeURI(`${baseUrl}${sourceLang}/${languageDestination}/${toTranslate}`);
 
@@ -19,7 +27,7 @@ const getTranslation = (info, tab) => {
 
 chrome.contextMenus.create({
     id: 'translator',
-    title: 'Translate "%s" to ' + lang,
+    title: 'Translate "%s" to ' + langs[destLang],
     contexts: ['selection'],
     onclick: getTranslation,
 });
@@ -27,6 +35,9 @@ chrome.contextMenus.create({
 const popupListener = (request, sender, sendResponse) => {
     if (request.currentLang) {
         destLang = request.currentLang;
+        chrome.contextMenus.update('translator', {
+            title: 'Translate "%s" to ' + langs[destLang],
+        });
     }
 }
 
