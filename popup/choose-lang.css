@@ -15,3 +15,8 @@ html, body {
 .button:hover {
 	background-color: #CFF2F2;
 }
+
+.button.active {
+	color: white;
+	background-color: rgb(143, 36, 120);
+}
