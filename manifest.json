@@ -6,7 +6,7 @@
     "description": "Translate selection with contextmenu.",
     "homepage_url": "https://github.com/gritchou/translator",
     "icons": {
-        "48": "icons/planet.png"
+        "128": "icons/owl.png"
     },
 
     "background": {
@@ -22,7 +22,7 @@
     ],
 
     "browser_action": {
-        "default_icon": "icons/planet.png",
+        "default_icon": "icons/owl.png",
         "default_title": "Translator",
         "default_popup": "popup/choose-lang.html"
     }
