@@ -2,27 +2,16 @@
     "manifest_version": 2,
     "name": "Translator",
     "version": "1.0",
-  
+
     "description": "Translate selection with contextmenu.",
     "homepage_url": "https://github.com/gritchou/translator",
     "icons": {
         "128": "icons/owl.png"
     },
 
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
-
-    "permissions": [
-        "activeTab",
-        "contextMenus"
-    ],
-
     "browser_action": {
-        "default_icon": "icons/owl.png",
-        "default_title": "Translator",
-        "default_popup": "popup/choose-lang.html"
+        "default_icon": "TODO",
+        "default_title": "TODO",
+        "default_popup": "TODO"
     }
 }
