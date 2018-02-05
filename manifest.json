@@ -10,8 +10,8 @@
     },
 
     "browser_action": {
-        "default_icon": "TODO",
-        "default_title": "TODO",
-        "default_popup": "TODO"
+        "default_icon": "icons/owl.png",
+        "default_title": "Translator Popup",
+        "default_popup": "popup/choose-lang.html"
     }
 }
