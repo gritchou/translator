@@ -1,0 +1,16 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "Translate selection with contextmenu.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gritchou/translator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gritchou/translator/issues"
+  },
+  "homepage": "https://github.com/gritchou/translator",
+  "devDependencies": {
+    "@types/chrome": "0.0.59"
+  }
+}
