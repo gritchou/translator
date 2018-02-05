@@ -1,12 +1,12 @@
 {
-    "manifest_version": TODO,
-    "name": "TODO",
-    "version": "TODO",
+    "manifest_version": 2,
+    "name": "Translator",
+    "version": "1.0",
 
-    "description": "TODO",
+    "description": "Translate selection with context menu.",
     "homepage_url": "https://github.com/gritchou/translator",
     "icons": {
-        "128": "TODO"
+        "128": "icons/owl.png"
     }
 
 }
